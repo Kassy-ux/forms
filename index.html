@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cute Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <form class="cute-form">
+    <h2>💌 Cute Contact Form</h2>
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+    </div>
+
+    <div class="form-group">
+      <label>Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Hobbies</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="hobby" value="drawing" /> Drawing</label>
+        <label><input type="checkbox" name="hobby" value="music" /> Music</label>
+        <label><input type="checkbox" name="hobby" value="travel" /> Travel</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select id="country">
+        <option value="">-- Choose One --</option>
+        <option value="us">USA</option>
+        <option value="uk">UK</option>
+        <option value="ng">Nigeria</option>
+        <option value="fr">France</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="file">Upload File</label>
+      <input type="file" id="file" />
+    </div>
+
+    <button type="submit">Send 💖</button>
+  </form>
+
+</body>
+</html>
